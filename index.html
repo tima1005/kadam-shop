@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="KADAM — современная одежда, обувь и аксессуары"
+    >
+
+    <meta name="theme-color" content="#0a0a0a">
+
+    <title>KADAM — Streetwear & Style</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- ОСНОВНОЙ CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+    <div class="container top-bar-inner">
+        <span>
+            <i class="fa-solid fa-truck-fast"></i>
+            Бесплатная доставка от 5000 сом
+        </span>
+
+        <div class="top-links">
+            <a href="#contacts">Контакты</a>
+            <a href="#about">О нас</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+    <div class="container header-inner">
+
+        <a href="#" class="logo">
+            KADAM<span>.</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#catalog">Каталог</a>
+            <a href="#new">Новинки</a>
+            <a href="#sale">Sale</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="icon-btn"
+                id="searchBtn"
+                aria-label="Поиск"
+                type="button"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button
+                class="icon-btn"
+                id="favoritesBtn"
+                aria-label="Избранное"
+                type="button"
+            >
+                <i class="fa-regular fa-heart"></i>
+                <span class="count-badge" id="favoriteCount">0</span>
+            </button>
+
+            <button
+                class="icon-btn"
+                id="cartBtn"
+                aria-label="Корзина"
+                type="button"
+            >
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="count-badge" id="cartCount">0</span>
+            </button>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Меню"
+                type="button"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MOBILE NAV -->
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#catalog">Каталог</a>
+        <a href="#new">Новинки</a>
+        <a href="#sale">Sale</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-panel" id="searchPanel">
+    <div class="container search-inner">
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Поиск товаров..."
+                autocomplete="off"
+            >
+
+            <button
+                id="closeSearch"
+                type="button"
+                aria-label="Закрыть поиск"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <img
+        src="/images/hero.jpg"
+        alt="KADAM Streetwear"
+        class="hero-bg"
+        onerror="fallbackImage(this)"
+    >
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span class="hero-eyebrow">
+            KADAM / STREETWEAR
+        </span>
+
+        <h1>
+            ТВОЙ СТИЛЬ.<br>
+            ТВОЙ <span>ШАГ.</span>
+        </h1>
+
+        <p>
+            Современная одежда, обувь и аксессуары
+            для тех, кто выбирает свой путь.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#catalog" class="btn btn-primary">
+                Смотреть каталог
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#new" class="btn btn-outline">
+                Новинки
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+    <div class="container features-grid">
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+
+            <div>
+                <h3>Быстрая доставка</h3>
+                <p>По Бишкеку и Кыргызстану</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+                <h3>Качество</h3>
+                <p>Только проверенные товары</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+
+            <div>
+                <h3>Удобная оплата</h3>
+                <p>Наличными или переводом</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <div>
+                <h3>Поддержка</h3>
+                <p>Всегда на связи</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section categories-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">КАТЕГОРИИ</span>
+                <h2>Выбери свой стиль</h2>
+            </div>
+
+            <a href="#catalog" class="section-link">
+                Все товары
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+
+        <div class="categories-grid">
+
+            <button
+                class="category-card"
+                onclick="filterProducts('Футболки')"
+                type="button"
+            >
+                <img
+                    src="/images/product-1.jpg"
+                    alt="Футболки"
+                    onerror="fallbackImage(this)"
+                >
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                    <span>01</span>
+                    <h3>Футболки</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+
+
+            <button
+                class="category-card"
+                onclick="filterProducts('Обувь')"
+                type="button"
+            >
+                <img
+                    src="/images/product-2.jpg"
+                    alt="Обувь"
+                    onerror="fallbackImage(this)"
+                >
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                    <span>02</span>
+                    <h3>Обувь</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+            
+
+
+            <button
+                class="category-card"
+                onclick="filterProducts('Аксессуары')"
+                type="button"
+            >
+                <img
+                    src="/images/product-3.jpg"
+                    alt="Аксессуары"
+                    onerror="fallbackImage(this)"
+                >
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                    <span>03</span>
+                    <h3>Аксессуары</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+
+
+            <button
+                class="category-card"
+                onclick="filterProducts('Куртки')"
+                type="button"
+            >
+                <img
+                    src="/images/product-1.jpg"
+                    alt="Куртки"
+                    onerror="fallbackImage(this)"
+                >
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                    <span>04</span>
+                    <h3>Куртки</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+
+
+            <button
+                class="category-card"
+                onclick="filterProducts('Штаны')"
+                type="button"
+            >
+                <img
+                    src="/images/product-1.jpg"
+                    alt="Штаны"
+                    onerror="fallbackImage(this)"
+                >
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                    <span>05</span>
+                    <h3>Штаны</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATALOG ================= -->
+
+<section class="section catalog-section" id="catalog">
+
+    <div class="container">
+
+        <div class="section-heading catalog-heading">
+
+            <div>
+                <span class="section-label">КАТАЛОГ</span>
+                <h2>Все товары</h2>
+            </div>
+
+            <select id="sortSelect" class="sort-select">
+                <option value="default">По умолчанию</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+                <option value="name">По названию</option>
+            </select>
+
+        </div>
+
+
+        <div class="filter-chips" id="filterChips">
+
+            <button
+                class="filter-chip active"
+                data-filter="all"
+                type="button"
+            >
+                Все
+            </button>
+
+            <button
+                class="filter-chip"
+                data-filter="Футболки"
+                type="button"
+            >
+                Футболки
+            </button>
+
+            <button
+                class="filter-chip"
+                data-filter="Обувь"
+                type="button"
+            >
+                Обувь
+            </button>
+
+            <button
+                class="filter-chip"
+                data-filter="Аксессуары"
+                type="button"
+            >
+                Аксессуары
+            </button>
+
+            <button
+                class="filter-chip"
+                data-filter="Куртки"
+                type="button"
+            >
+                Куртки
+            </button>
+
+            <button
+                class="filter-chip"
+                data-filter="Штаны"
+                type="button"
+            >
+                Штаны
+            </button>
+
+            <button
+                class="filter-chip"
+                data-filter="Рубашки"
+                type="button"
+            >
+                Рубашки
+            </button>
+
+        </div>
+
+
+        <div class="products-grid" id="catalogProducts"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEW ================= -->
+
+<section class="section new-section" id="new">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">НОВИНКИ</span>
+                <h2>Новые поступления</h2>
+            </div>
+
+        </div>
+
+        <div class="products-grid" id="newProducts"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SALE ================= -->
+
+<section class="sale-section" id="sale">
+
+    <div class="container">
+
+        <div class="sale-banner">
+
+            <div class="sale-content">
+
+                <span class="sale-label">
+                    KADAM SALE
+                </span>
+
+                <h2>
+                    ДО -30%
+                </h2>
+
+                <p>
+                    Успей забрать избранные товары
+                    по специальной цене.
+                </p>
+
+                <a href="#catalog" class="btn btn-white">
+                    Смотреть Sale
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BEST ================= -->
+
+<section class="section best-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">ПОПУЛЯРНОЕ</span>
+                <h2>Выбор KADAM</h2>
+            </div>
+
+        </div>
+
+        <div class="products-grid" id="bestProducts"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img
+                src="/images/hero.jpg"
+                alt="KADAM"
+                onerror="fallbackImage(this)"
+            >
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-label">
+                О KADAM
+            </span>
+
+            <h2>
+                Двигайся своим<br>
+                <span>шагом.</span>
+            </h2>
+
+            <p>
+                KADAM — это современный streetwear бренд
+                для людей, которые ценят стиль, комфорт
+                и индивидуальность.
+            </p>
+
+            <p>
+                Мы собираем вещи, которые легко сочетать
+                каждый день и которые помогают создать
+                свой собственный образ.
+            </p>
+
+            <a href="#contacts" class="btn btn-dark">
+                Связаться с нами
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACTS ================= -->
+
+<section class="section contacts-section" id="contacts">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">КОНТАКТЫ</span>
+                <h2>Будем на связи</h2>
+            </div>
+
+        </div>
+
+
+        <div class="contacts-grid">
+
+            <a
+                href="https://instagram.com/кадам"
+                target="_blank"
+                class="contact-card"
+            >
+                <div class="contact-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div>
+                    <span>Instagram</span>
+                    <strong>@кадам</strong>
+                </div>
+            </a>
+
+
+            <a
+                href="https://wa.me/996500000"
+                target="_blank"
+                class="contact-card"
+            >
+                <div class="contact-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div>
+                    <span>WhatsApp</span>
+                    <strong>Написать нам</strong>
+                </div>
+            </a>
+
+
+            <a
+                href="https://t.me/кадам"
+                target="_blank"
+                class="contact-card"
+            >
+                <div class="contact-icon">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+
+                <div>
+                    <span>Telegram</span>
+                    <strong>@кадам</strong>
+                </div>
+            </a>
+
+
+            <a
+                href="tel:+996000000000"
+                class="contact-card"
+            >
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                    <span>Телефон</span>
+                    <strong>+996 000 000 000</strong>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo footer-logo">
+                    KADAM<span>.</span>
+                </a>
+
+                <p>
+                    Streetwear & Style.
+                    Двигайся своим шагом.
+                </p>
+
+                <div class="social-links">
+
+                    <a
+                        href="https://instagram.com/кадам"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="https://t.me/кадам"
+                        target="_blank"
+                        aria-label="Telegram"
+                    >
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a
+                        href="https://wa.me/кадам"
+                        target="_blank"
+                        aria-label="WhatsApp"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Магазин</h4>
+
+                <a href="#catalog">Каталог</a>
+                <a href="#new">Новинки</a>
+                <a href="#sale">Sale</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Информация</h4>
+
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#catalog">Доставка</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Помощь</h4>
+
+                <a href="#contacts">WhatsApp</a>
+                <a href="#contacts">Telegram</a>
+                <a href="#contacts">Instagram</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 KADAM. Все права защищены.
+            </p>
+
+            <p>
+                Made with <span>♥</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <div>
+            <span class="section-label">ВАША</span>
+            <h2>Корзина</h2>
+        </div>
+
+        <button
+            id="closeCart"
+            type="button"
+            aria-label="Закрыть корзину"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems"></div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Итого</span>
+
+            <strong id="cartTotal">
+                0 сом
+            </strong>
+
+        </div>
+
+        <button
+            class="btn btn-dark checkout-btn"
+            id="checkoutBtn"
+            type="button"
+        >
+            Заказать в WhatsApp
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= PRODUCT MODAL ================= -->
+
+<div class="modal-overlay" id="productModal">
+
+    <div class="product-modal-content">
+
+        <button
+            class="modal-close"
+            id="closeProductModal"
+            type="button"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="productDetail"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+    <i class="fa-solid fa-check"></i>
+    <span id="toastMessage">Готово</span>
+</div>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    aria-label="Наверх"
+>
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= SCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
